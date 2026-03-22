@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   services = {
+    asusd.enable = true;
     gvfs.enable = true;
             
     gnome = {

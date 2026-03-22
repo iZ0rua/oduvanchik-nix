@@ -47,15 +47,23 @@ in
     ];
     clock = {
       calendar = {
+        iso8601 = true;  
+        on-scroll = true;
         format = {
           today = "<span color='#98971A'><b>{}</b></span>";
         };
+      };
+      actions = {
+        "on-scroll-up"   = "shift_up";   # Scroll to next month
+        "on-scroll-down" = "shift_down"; # Scroll to previous month
+        "on-click-middle" = "shift_reset"; # RE-SET to current date
       };
       format = "  {:%H:%M}";
       tooltip = "true";
       tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
       format-alt = "  {:%d/%m}";
     };
+    #workspaces
     "hyprland/workspaces" = {
       active-only = false;
       disable-scroll = true;

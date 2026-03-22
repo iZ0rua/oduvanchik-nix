@@ -7,7 +7,7 @@
     ./browser.nix                     # firefox based browser
     ./btop.nix                        # resouces monitor 
     ./cava.nix                        # audio visualizer
-    ./discord.nix                     # discord
+    #./discord.nix                     # discord
     ./fastfetch/fastfetch.nix         # fetch tool
     ./fzf.nix                         # fuzzy finder
     ./gaming.nix                      # packages related to gaming
@@ -31,7 +31,6 @@
     ./ssh.nix                         # ssh config
     ./spicetify.nix                   # spotify client
     ./superfile/superfile.nix         # terminal file manager
-    ./swaylock.nix                    # lock screen
     ./swayosd.nix                     # brightness / volume wiget
     ./swaync/swaync.nix               # notification deamon
     ./waybar                          # status bar

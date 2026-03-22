@@ -2,7 +2,7 @@
 with lib;
 let
   defaultApps = {
-    text = [ "org.gnome.TextEditor.desktop" ];
+    text = [ "nvim-ghostty.desktop" ];
     image = [ "imv-dir.desktop" ];
     audio = [ "mpv.desktop" ];
     video = [ "mpv.desktop" ];

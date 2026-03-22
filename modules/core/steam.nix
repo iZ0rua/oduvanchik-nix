@@ -7,6 +7,7 @@
       gamescopeSession.enable = true;
 
       extraCompatPackages = [ pkgs.proton-ge-bin ];
+      package = pkgs.millennium-steam;
     };
 
     gamescope = {

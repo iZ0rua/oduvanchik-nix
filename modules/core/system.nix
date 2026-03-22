@@ -23,12 +23,6 @@
     };
   };
 
-  nix.gc = {
-    automatic = true;
-    dates = "daily";
-    options = "--delete-older-than 7d";
-  };
-
   environment.systemPackages = with pkgs; [
     kdePackages.plasma-workspace
     libappindicator-gtk3

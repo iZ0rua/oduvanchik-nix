@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    #nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     nur.url = "github:nix-community/NUR";
 
     home-manager = {
@@ -27,9 +28,11 @@
       url = "github:Gerg-L/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    zen-browser.url = "github:0xc000022070/zen-browser-flake/beta";
     
-    nixvim.url = "github:dc-tec/nixvim";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake/beta";
+    # steam interface
+    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+    #nixvim.url = "github:dc-tec/nixvim";
   };
 
   outputs =

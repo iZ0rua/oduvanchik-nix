@@ -46,5 +46,33 @@
     
     lua-language-server                # for lua_ls
     ruff
+
+    arduino
+
+    omnisharp-roslyn    # Language Server (LSP)
+    netcoredbg          # Debugger (DAP)
+    ripgrep             # Required by many AstroNvim features
+    #csharp-ls
+    
+    #dotnet-sdk_10
+
+    #(with pkgs.dotnetCorePackages; combinePackages [
+    #  sdk_9_0
+    #  sdk_10_0
+    #])
+
+    netcoredbg
+    mono
+    roslyn-ls
+    omnisharp-roslyn
+    fontconfig
+    freetype
+    skia
+    #xdotool
+    libx11       # Essential for Avalonia
+    icu               # Essential for .NET Globalization
+    zlib              # Common compression
+    libGL             # Hardware acceleration
+    openssl           # Networking/Auth
   ];
 }
