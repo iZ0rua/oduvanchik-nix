@@ -4,7 +4,6 @@
     ## Multimedia
     amberol # music player
     audacity
-    davinci-resolve-studio
     gimp
     media-downloader
     obs-studio

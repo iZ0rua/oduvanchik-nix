@@ -18,6 +18,7 @@
     ./hyprland                        # window manager
     ./kitty.nix                       # terminal
     ./lazygit.nix
+    ./camera.nix                      # camera gui
     ./nemo.nix                        # file manager
     ./nvim.nix                        # neovim editor
     ./obsidian.nix
@@ -38,7 +39,6 @@
     ./zsh                             # shell
     
     ./telegram.nix                    # telegram
-    ./flclash.nix
     ./unity.nix
   ];
 }

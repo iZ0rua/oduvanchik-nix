@@ -36,6 +36,9 @@
 
     #genshin
     aagl.url = "github:ezKEa/aagl-gtk-on-nix";
+
+    #grub theme 
+    grubshin-bootpact.url = "github:max-ishere/grubshin-bootpact";
   };
 
   outputs =

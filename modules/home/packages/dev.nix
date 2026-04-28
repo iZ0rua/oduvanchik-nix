@@ -35,9 +35,6 @@
 
     # Node.js
     nodejs_20
-    nodePackages.vim-language-server
-    nodePackages.bash-language-server  # for bashls
-    nodePackages.yaml-language-server  # for yamlls
     
     pyright
     

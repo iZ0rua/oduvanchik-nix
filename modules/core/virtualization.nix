@@ -13,13 +13,10 @@
     virtio-win
     win-spice
     adwaita-icon-theme
-    waydroid
-    waydroid-helper
   ];
 
   # Manage the virtualisation services
   virtualisation = {
-    waydroid.enable = true;
     libvirtd = {
       enable = true;
       qemu = {

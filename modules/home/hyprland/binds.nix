@@ -39,12 +39,12 @@
       "$mod, equal, exec, woomer"
       # "$mod SHIFT, W, exec, vm-start"
 
-      # screenshot
-      ", F11, exec, screenshot --copy"
-      "$mod, F11, exec, screenshot --save"
-      "$mod SHIFT, F11, exec, screenshot --swappy"
+      # screenshot      # OCR
+      
+      ", F11, exec, grim - | wl-copy"
+      # "$mod SHIFT, F11, exec, screenshot --swappy"
+      "CTRL, F11, exec, grim -g \"$(slurp)\" - | satty --filename - --fullscreen --early-exit --copy-command \"wl-copy\" && wl-paste | wl-copy"
 
-      # OCR
       "$mod CTRL, O, exec, ocr"
 
       # switch focus

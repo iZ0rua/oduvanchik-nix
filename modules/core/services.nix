@@ -30,4 +30,6 @@
 
     udisks2.enable = true;
   };
+
+  time.hardwareClockInLocalTime = true;
 }

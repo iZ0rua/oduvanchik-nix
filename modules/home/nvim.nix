@@ -14,9 +14,13 @@
     };
   };
 
-  programs.neovim = {
-    enable = true;
-    vimAlias = true;
-    defaultEditor = true;
-  };
+  home.packages = [
+    pkgs.neovim-unwrapped
+  ];
+
+  #programs.neovim = {
+    #enable = true;
+    #vimAlias = true;
+    #defaultEditor = true;
+  #};
 }

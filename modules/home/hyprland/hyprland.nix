@@ -1,8 +1,9 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    # tray icon support (like battle.net)
-    swww
+    #screenshot
+    satty
+    awww
     grimblast
     hyprpicker
     grim
