@@ -8,6 +8,7 @@
     ./network.nix
     ./genshin.nix
     ./bluetooth.nix
+    ./davinchi.nix
     ./nh.nix
     ./pipewire.nix
     ./dev.nix
