@@ -81,22 +81,6 @@
               ;
           };
         };
-        p14s = nixpkgs.lib.nixosSystem {
-          inherit system;
-          modules = [ ./hosts/p14s ];
-          specialArgs = {
-            host = "p14s";
-            inherit self inputs username;
-          };
-        };
-        vm = nixpkgs.lib.nixosSystem {
-          inherit system;
-          modules = [ ./hosts/vm ];
-          specialArgs = {
-            host = "vm";
-            inherit self inputs username;
-          };
-        };
       };
     };
 }
