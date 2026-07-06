@@ -51,6 +51,10 @@
       "rounding 0, match:float 0, match:workspace w[tv1]"
       "border_size 0, match:float 0, match:workspace f[1]"
       "rounding 0, match:float 0, match:workspace f[1]"
+      "match:class ^(Tk)$, match:title ^(pyugt translation)$, float on"
+      "match:class ^(Tk)$, match:title ^(pyugt translation)$, pin on"
+      "match:class ^(Tk)$, match:title ^(pyugt translation)$, size 300 1000"
+      "match:class ^(Tk)$, match:title ^(pyugt translation)$, move 2200 220"
     ];
 
     layerrule = [

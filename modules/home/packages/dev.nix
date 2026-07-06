@@ -39,6 +39,7 @@
     python3
 
     python3Packages.pip
+    python3Packages.tkinter
     python3Packages.ipython
     python3Packages.python-lsp-server
     python3Packages.python-lsp-jsonrpc

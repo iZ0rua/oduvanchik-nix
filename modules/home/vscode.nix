@@ -19,5 +19,6 @@
     gh
     obsidian
     virt-manager
+    tesseract
   ];
 }
