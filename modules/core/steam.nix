@@ -7,7 +7,7 @@
       extraCompatPackages = [ pkgs.proton-ge-bin ];
       
       # Временно используем стандартный Steam, чтобы исключить влияние Millennium
-      package = pkgs.steam; 
+      package = pkgs.millennium-steam;
     };
 
     gamescope = {

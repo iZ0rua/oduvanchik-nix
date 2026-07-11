@@ -1,5 +1,6 @@
 {
   pkgs,
+  inputs,
   ...
 }:
 {
@@ -53,4 +54,5 @@ programs.nix-ld.libraries = with pkgs; [
   stdenv.cc.cc.lib
   zlib
 ];
+nixpkgs.overlays = [ inputs.millennium.overlays.default ];
 }

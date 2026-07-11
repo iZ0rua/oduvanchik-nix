@@ -1,4 +1,10 @@
-{ pkgs, ... }:
+{
+  pkgs,
+  ...
+}:
+let
+  ollamaCuda = pkgs.ollama.override { acceleration = "cuda"; };
+in
 {
   programs.vscode = {
     enable = true;
@@ -10,8 +16,8 @@
 
   home.packages = with pkgs; [
     pipes-rs
-    cbonsai     
-    cmatrix     
+    cbonsai
+    cmatrix
     samrewritten
     asciiquarium-transparent
     protontricks
@@ -21,6 +27,15 @@
     virt-manager
     tesseract
     cool-retro-term
-    (pkgs.ollama.override { acceleration = "cuda"; })
+    ollamaCuda
   ];
+
+  systemd.user.services.ollama = {
+    Unit.Description = "Ollama server";
+    Install.WantedBy = [ "default.target" ];
+    Service = {
+      ExecStart = "${ollamaCuda}/bin/ollama serve";
+      Restart = "on-failure";
+    };
+  };
 }
